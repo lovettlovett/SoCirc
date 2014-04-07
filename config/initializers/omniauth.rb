@@ -1,0 +1,3 @@
+Rails.application.config.middleware.use OmniAuth::Builder do
+	provider :facebook, '698794360142557', '24f06a32215d906d360df3f2231dc424', {:scope => "basic_info, user_birthday, user_hometown, user_likes, user_activities, user_interests, user_photos, user_friends, user_about_me, user_status, friends_birthday, friends_relationships, friends_relationship_details, friends_hometown, friends_location, friends_likes, friends_activities, friends_education_history, friends_work_history, friends_about_me"}
+end
