@@ -2,7 +2,7 @@
 	<div class="centered-container">
 		<div class="schools-container">
 			<h1>Relationship Statuses</h1>
-			 <%@relationship_frequencies.each do |status|%>
+			 <%@relationship_frequencies.reverse.each do |status|%>
 			 <div class="school-label">
 			 	<%=status[0]%>
 			 </div>
@@ -16,6 +16,9 @@
 				 	</div><br>
 				<%end%>
 			 <%end%>
+			 <br>
+			 <br>
+			 <a href="/"><button>home &raquo;</button></a>
 		</div>
 	</div>
 </div>

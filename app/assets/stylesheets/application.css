@@ -66,14 +66,14 @@ header {
 }
 
 .school-bar {
-  background-color: #50B6FF;
+  background-color: #285B7F;
  /* margin: 0px auto;*/
   border-radius: 6px;
 }
 
 .bar-text {
   opacity: 0;
-  color: #50B6FF;
+  color: #285B7F;
   text-align: center;
   vertical-align: middle;
 }
@@ -105,10 +105,27 @@ header {
 
 button {
   width: 200px;
-  background-color: #50B6FF;
+  background-color: #285B7F;
   font-family: helvetica;
   font-size: 18px;
   color: #eeeeee;
-  padding: 25px 25px;
+  padding: 15px 15px;
   border-radius: 8px;
 }
+
+a {
+  color: #eeeeee;
+}
+
+.login a {
+  color: #285B7F;
+}
+
+.back {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  color: red;
+  border-radius: 100%;
+}
+

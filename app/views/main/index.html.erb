@@ -3,7 +3,11 @@
 		<div class="schools-container">
 			<h1>Welcome to SoCirc!</h1>
 			<% if current_user %>
-	  		<a href="/school"><button>schools</button></a>
+				<h2>Check Out Your Social Circle's:</h2>
+	  		<a href="/school"><button>educations &raquo;</button></a><br><br>
+	  		<a href="/location"><button>locations &raquo;</button></a><br><br>
+	  		<a href="/work"><button>employers &raquo;</button></a><br><br>
+	  		<a href="/relationship"><button>relationships &raquo;</button></a>
 			<% else %>
 	  		<a href="/auth/facebook"><button>login with facebook</button></a>
 			<% end %>	
