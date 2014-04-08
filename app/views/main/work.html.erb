@@ -1,0 +1,21 @@
+<div class="main-container">
+	<div class="centered-container">
+		<div class="schools-container">
+			<h1>Top 10 Employers</h1>
+			 <%@top_ten_work.each do |work|%>
+			 <div class="school-label">
+			 	<%=work[0]%>
+			 </div>
+			 	<%if work[1] > 100%>
+				 	<div class="school-bar grow" style="width:<%=(work[1] * 2.5)%>px; height:40px">
+				 		<h4 class="bar-text"><%=work[1]%> friends / <%=(((work[1].to_f/@total_friends).round(2) * 100).round(0))%>% of your friends</h4>
+				 	</div><br>
+				<%else%>
+					<div class="school-bar grow" style="width:100px; height:40px">
+				 		<h4 class="bar-text"><%=work[1]%> / <%=(((work[1].to_f/@total_friends).round(2) * 100).round(0))%>%</h4>
+				 	</div><br>
+				<%end%>
+			 <%end%>
+		</div>
+	</div>
+</div>

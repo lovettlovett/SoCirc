@@ -4,18 +4,28 @@
   <title>Fbook</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v1.1.5.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+	<div class="menu-item">
+		<h1>SoCirc</h1>
+	</div>
+	<div class="menu-item login">
+	<% if current_user %>
+	  Welcome, <%= current_user.name %>! <br>
+	  <a href="/signout">Sign Out</a>
+	<% else %>
+	  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+	<% end %>
+</div>
+</header>
 
 <%= yield %>
 
-<% if current_user %>
-  Welcome <%= current_user.name %>!
-  <%= link_to "Sign Out", signout_path %>
-<% else %>
-  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
-<% end %>
+
 
 </body>
 </html>

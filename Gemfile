@@ -41,6 +41,8 @@ gem 'pry-rails', :group => :development
 gem 'rmagick', '2.13.2'
 gem 'carrierwave'
 
+gem 'd3-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

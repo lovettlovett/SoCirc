@@ -1,4 +1,12 @@
-<h1>Welcome!</h1>
-
-
-
+<div class="main-container">
+	<div class="centered-container">
+		<div class="schools-container">
+			<h1>Welcome to SoCirc!</h1>
+			<% if current_user %>
+	  		<a href="/school"><button>schools</button></a>
+			<% else %>
+	  		<a href="/auth/facebook"><button>login with facebook</button></a>
+			<% end %>	
+		</div>
+	</div>
+</div>
